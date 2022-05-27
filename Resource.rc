@@ -1,0 +1,178 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Modern) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 237, 230
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Free Shutdown"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Apagar",IDSHUTDOWN,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    21,30,50,14
+    CONTROL         "Cerrar Sesión",IDCLOSE,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,89,31,59,14
+    GROUPBOX        "Control Manual",IDC_STATIC,7,7,223,54
+    CONTROL         "Reiniciar",IDREBOOT,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    165,31,50,14
+    GROUPBOX        "Control Automatico",IDC_STATIC,7,66,223,54
+    LTEXT           "Tiempo Restante: 00:00:00",IDC_STATIC_TIME,74,88,113,8
+    CONTROL         "Apagar",IDC_RADIO_SHUTDOWN,"Button",BS_AUTORADIOBUTTON | 
+                    BS_VCENTER,16,141,40,11
+    CONTROL         "Reiniciar",IDC_RADIO_REBOOT,"Button",BS_AUTORADIOBUTTON | 
+                    BS_VCENTER,16,157,40,11
+    DEFPUSHBUTTON   "Aceptar",IDOK,7,209,50,14
+    DEFPUSHBUTTON   "Detener",IDCANCEL,180,209,50,14
+    LTEXT           "",IDC_STATIC_TEXT,73,74,142,8
+    COMBOBOX        IDC_COMBO1,16,175,68,29,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Hora Actual: 00:00:00",IDC_STATIC_TIME2,74,101,90,8
+    DEFPUSHBUTTON   "Acerca de",IDABOUT,93,209,50,14
+    GROUPBOX        "Seleccion de Tiempo",IDC_STATIC,7,125,223,80
+    CONTROL         "Spin1",IDC_SPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | WS_DISABLED,119,177,11,10
+    EDITTEXT        IDC_EDIT,89,175,29,13,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER | WS_DISABLED
+    EDITTEXT        IDC_EDIT2,133,175,29,13,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER | WS_DISABLED
+    CONTROL         "Spin1",IDC_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | WS_DISABLED,163,178,11,10
+    LTEXT           "Hora(s):",IDC_STATIC,90,161,26,8
+    LTEXT           "Minuto(s):",IDC_STATIC,133,161,34,8
+    CONTROL         "Seleccionar tiempo manualmente",IDC_CHECK_TIME,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,82,143,128,12
+    EDITTEXT        IDC_EDIT3,179,175,29,13,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER | WS_DISABLED
+    CONTROL         "Spin1",IDC_SPIN3,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | WS_DISABLED,212,177,11,10
+    LTEXT           "Segundo(s)",IDC_STATIC,178,161,42,8
+END
+
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 186, 145
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Acerca de Free Shutdown"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",ID_ABOUT_OK,123,117,50,14
+    ICON            IDI_ICON1,IDC_STATIC,25,34,21,20
+    GROUPBOX        "",IDC_STATIC,7,7,172,131
+    LTEXT           "Free Shutdown 1.0",IDC_STATIC,63,28,90,9
+    LTEXT           "Copyright 2008 por",IDC_STATIC,63,42,90,9
+    LTEXT           "A. Juárez",IDC_STATIC,64,56,90,9
+    LTEXT           "Programación en C/C++ con FMOD, SDL, OpenGL y DirectX",
+                    IDC_STATIC,25,71,135,18
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+1                       24      DISCARDABLE     "default1.bin"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "main.ico"
+IDI_ICON2               ICON    DISCARDABLE     "reboot.ico"
+IDI_ICON3               ICON    DISCARDABLE     "close.ico"
+IDI_ICON4               ICON    DISCARDABLE     "about.ico"
+IDI_ICON5               ICON    DISCARDABLE     "cancel.ico"
+IDI_ICON7               ICON    DISCARDABLE     "view.ico"
+IDI_ICON8               ICON    DISCARDABLE     "main2.ico"
+#endif    // Spanish (Modern) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
